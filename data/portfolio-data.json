@@ -1,0 +1,110 @@
+{
+  "intro": {
+    "title": "Hi, I'm Rubesh",
+    "subtitle": "A passionate full-stack developer with a strong foundation in modern web technologies and an evolving curiosity for automation. Dedicated to mastering new tools and building impactful digital experiences through innovation and continuous learning."
+  },
+  "about": "A tech enthusiast driven by the thrill of building and innovating. With a solid grounding in full-stack development and hands-on experience across multiple tech stacks, my journey began with a fascination for crafting responsive, user-centric web applications. Over the years, this has blossomed into a broader passion for automation, data analytics, and scalable design. My approach blends curiosity with purpose: I'm always eager to dive into new frameworks, tackle complex problems, and translate ideas into solutions that create value. Whether I'm visualizing insights, optimizing workflows, or building end-to-end systems, I thrive on pushing boundaries and staying at the frontier of technology.",
+  "skills": {
+    "languages": ["JavaScript", "TypeScript", "Python", "Java", "C#"],
+    "frontend": ["React", "Next", "Vue", "React Native"],
+    "backend": ["Django", ".NET Core", "Node.js", "Nest.js"],
+    "databases": ["MySQL", "PostgreSQL", "MongoDB"]
+  },
+  "experience": [
+    {
+      "id": 1,
+      "company": "Aide Ascent",
+      "position": "Next JS Intern",
+      "location": "Remote",
+      "startDate": "Nov 2024",
+      "endDate": "Feb 2025",
+      "current": false,
+      "responsibilities": [
+        "Developed responsive React components in Next.js by translating Figma designs into pixel-perfect UI.",
+        "Integrated RESTful APIs for dynamic data rendering and cleanly structured types with TypeScript interfaces.",
+        "Resolved complex issues and errors through structured debugging and research.",
+        "Collaborated with cross-functional teams and participated in client meetings, enhancing professional communication and presentation skills."
+      ],
+      "technologies": [
+        "Next JS",
+        "React",
+        "TypeScript",
+        "Figma",
+        "RESTful APIs"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "institution": "Islington College",
+      "degree": "Bsc (Hons) in Computing",
+      "field": "Computer Science",
+      "location": "Kamalpokhari, Kathmandu",
+      "startDate": "2022",
+      "endDate": "2025"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "LMS (Library Management System)",
+      "description": "An E-Commerce and Inventory Management System for managing library operations using .NET Core Web API.",
+      "technologies": ["Vite+React", ".NET Core", "PostgreSQL"],
+      "image": "https://i.ibb.co/WW9sD8wN/Picture1.png",
+      "githubUrl": "https://github.com/DoCurry/LMS-frontend",
+      "category": "Web"
+    },
+    {
+      "id": 2,
+      "title": "Hate Speech Detection AI",
+      "description": "An attempt to train a model to detect if any string/text is considered hate speech.",
+      "technologies": [
+        "Naive Bayes",
+        "Logistic Regression",
+        "TF-IDF vectorization",
+        "Google Colab"
+      ],
+      "image": "https://eq47oznpfsr.exactdn.com/wp-content/uploads/2024/08/What-Is-AI-Featured.jpg",
+      "githubUrl": "https://colab.research.google.com/drive/1xJHvRm4fhbEgOORnms30X-vuXQMPJAgA?usp=sharing",
+      "category": "Google Colab"
+    },
+    {
+      "id": 3,
+      "title": "Python Web Scrape",
+      "description": "A collection of Python scripts for web scraping different types of websites.",
+      "technologies": [
+        "Python",
+        "BeautifulSoup",
+        "Requests",
+        "Selenium"
+      ],
+      "image": "https://miro.medium.com/v2/resize:fit:2000/format:webp/0*c1zS0RHWXtJaiMaF.png",
+      "githubUrl": "https://github.com/DoCurry/First-Test-Scrape",
+      "category": "Python Automation"
+    }
+  ],
+  "certifications": [
+    {
+      "id": 1,
+      "name": "AWS Cloud Quest: Cloud Practitioner",
+      "issuer": "Amazon Web Services Training and Certification",
+      "issueDate": "July 26, 2023",
+      "image": "https://images.credly.com/size/680x680/images/2784d0d8-327c-406f-971e-9f0e15097003/image.png",
+      "technologies": [
+        "AWS",
+        "AWS Cloud",
+        "AWS Cloud Computing",
+        "AWS Cloud Foundations",
+        "Cloud Platform"
+      ],
+      "url": "https://www.credly.com/badges/8f81993a-0524-472c-a280-0243a37cec4a"
+    }
+  ],
+  "contact": {
+    "email": "rubeshshrestha2@gmail.com",
+    "phone": "+977 9863460932",
+    "linkedin": "https://linkedin.com/in/rubesh-shrestha-847092271/",
+    "github": "https://github.com/DoCurry"
+  }
+}
