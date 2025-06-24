@@ -1,0 +1,142 @@
+{
+  "intro": {
+    "title": "Hi, I'm [Your Name]",
+    "subtitle": "A passionate [your role/title] with expertise in [your main skills]. Describe your passion, interests, and what drives you in your professional journey."
+  },
+  "about": "Write a compelling about section that tells your story. Include your background, journey, interests, and what makes you unique. Mention your approach to work, what motivates you, and your professional philosophy. This should be 2-3 sentences that give a complete picture of who you are as a professional.",
+  "skills": {
+    "languages": ["JavaScript", "TypeScript", "Python", "Java", "C#", "Go", "Rust"],
+    "frontend": ["React", "Next.js", "Vue.js", "Angular", "Svelte", "React Native"],
+    "backend": ["Node.js", "Express", "Django", "FastAPI", ".NET Core", "Spring Boot"],
+    "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase", "Supabase"]
+  },
+  "experience": [
+    {
+      "id": 1,
+      "company": "Company Name",
+      "position": "Your Job Title",
+      "location": "City, Country or Remote",
+      "startDate": "Month Year (e.g., Jan 2023)",
+      "endDate": "Month Year or leave for current",
+      "current": true,
+      "responsibilities": [
+        "Describe your key responsibility or achievement",
+        "Another important task you performed",
+        "Quantifiable result or impact you made",
+        "Technology or process you implemented or improved"
+      ],
+      "technologies": [
+        "Technology 1",
+        "Technology 2",
+        "Framework 1",
+        "Tool 1"
+      ]
+    },
+    {
+      "id": 2,
+      "company": "Previous Company",
+      "position": "Previous Position",
+      "location": "Location",
+      "startDate": "Start Month Year",
+      "endDate": "End Month Year",
+      "current": false,
+      "responsibilities": [
+        "Previous role responsibility 1",
+        "Previous role responsibility 2",
+        "Achievement or impact made",
+        "Skills developed or technologies used"
+      ],
+      "technologies": [
+        "Previous Tech 1",
+        "Previous Tech 2",
+        "Previous Framework"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "institution": "University/College Name",
+      "degree": "Degree Type (e.g., Bachelor of Science, Master of Arts)",
+      "field": "Field of Study (e.g., Computer Science, Software Engineering)",
+      "location": "City, Country",
+      "startDate": "Start Year",
+      "endDate": "End Year or Expected"
+    },
+    {
+      "id": 2,
+      "institution": "High School or Secondary Education",
+      "degree": "Diploma/Certificate",
+      "field": "General Education or Specialization",
+      "location": "City, Country",
+      "startDate": "Start Year",
+      "endDate": "End Year"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Project Name",
+      "description": "Brief description of what the project does, its purpose, and key features. Keep it concise but informative.",
+      "technologies": ["Tech 1", "Tech 2", "Framework", "Database"],
+      "image": "https://example.com/project-image.jpg",
+      "githubUrl": "https://github.com/username/repository",
+      "category": "Web Application"
+    },
+    {
+      "id": 2,
+      "title": "Another Project",
+      "description": "Description of another project, highlighting different technologies or approaches used.",
+      "technologies": ["Different Tech", "Mobile Framework", "Cloud Service"],
+      "image": "https://example.com/another-project-image.jpg",
+      "githubUrl": "https://github.com/username/another-repo",
+      "category": "Mobile App"
+    },
+    {
+      "id": 3,
+      "title": "Data Science Project",
+      "description": "Example of a data science or machine learning project with relevant technologies.",
+      "technologies": ["Python", "Pandas", "Scikit-learn", "Jupyter"],
+      "image": "https://example.com/data-project-image.jpg",
+      "githubUrl": "https://github.com/username/data-project",
+      "category": "Data Science"
+    }
+  ],
+  "certifications": [
+    {
+      "id": 1,
+      "name": "Certification Name",
+      "issuer": "Certification Provider (e.g., AWS, Google, Microsoft)",
+      "issueDate": "Month Day, Year",
+      "credentialId": "CERT-ID-123456",
+      "image": "https://example.com/certification-badge.png",
+      "technologies": [
+        "Technology 1",
+        "Technology 2",
+        "Skill Area 1",
+        "Skill Area 2"
+      ],
+      "url": "https://verify-certification-url.com"
+    },
+    {
+      "id": 2,
+      "name": "Another Certification",
+      "issuer": "Another Provider",
+      "issueDate": "Month Day, Year",
+      "credentialId": "CERT-ID-789012",
+      "image": "https://example.com/another-cert-badge.png",
+      "technologies": [
+        "Different Tech",
+        "Different Skill",
+        "Platform Knowledge"
+      ],
+      "url": "https://another-verify-url.com"
+    }
+  ],
+  "contact": {
+    "email": "your.email@example.com",
+    "phone": "+1 (555) 123-4567",
+    "linkedin": "https://linkedin.com/in/your-profile",
+    "github": "https://github.com/your-username"
+  }
+}

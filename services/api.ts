@@ -9,6 +9,7 @@ import {
   Certification,
   Contact
 } from '@/types';
+import FallbackDataService from './fallback';
 
 // Create axios instance with base configuration
 const api = axios.create({
@@ -41,51 +42,130 @@ api.interceptors.response.use(
   }
 );
 
+// Helper function to handle API calls with fallback
+async function apiCallWithFallback<T>(
+  apiCall: () => Promise<T>,
+  fallbackCall: () => T,
+  endpoint: string
+): Promise<T> {
+  try {
+    return await apiCall();
+  } catch (error) {
+    console.warn(`API call to ${endpoint} failed:`, error);
+    
+    // Check if fallback is enabled
+    const fallbackEnabled = process.env.NEXT_PUBLIC_ENABLE_FALLBACK === 'true';
+    
+    if (fallbackEnabled) {
+      console.log(`Using fallback data for ${endpoint}`);
+      return fallbackCall();
+    } else {
+      console.error(`Fallback disabled, re-throwing error for ${endpoint}`);
+      throw error;
+    }
+  }
+}
+
 export class PortfolioAPI {
   // Get all portfolio data at once
   static async getPortfolioData(): Promise<PortfolioData> {
-    const response = await api.get<PortfolioData>('/portfolio');
-    return response.data;
+    return apiCallWithFallback(
+      async () => {
+        const response = await api.get<PortfolioData>('/portfolio');
+        return response.data;
+      },
+      () => FallbackDataService.getPortfolioData(),
+      '/portfolio'
+    );
   }
 
   // Get individual sections
   static async getIntro(): Promise<Intro> {
-    const response = await api.get<Intro>('/portfolio/intro');
-    return response.data;
+    return apiCallWithFallback(
+      async () => {
+        const response = await api.get<Intro>('/portfolio/intro');
+        return response.data;
+      },
+      () => FallbackDataService.getIntro(),
+      '/portfolio/intro'
+    );
   }
 
   static async getAbout(): Promise<{ about: string }> {
-    const response = await api.get<{ about: string }>('/portfolio/about');
-    return response.data;
+    return apiCallWithFallback(
+      async () => {
+        const response = await api.get<{ about: string }>('/portfolio/about');
+        return response.data;
+      },
+      () => FallbackDataService.getAbout(),
+      '/portfolio/about'
+    );
   }
 
   static async getSkills(): Promise<Skills> {
-    const response = await api.get<Skills>('/portfolio/skills');
-    return response.data;
+    return apiCallWithFallback(
+      async () => {
+        const response = await api.get<Skills>('/portfolio/skills');
+        return response.data;
+      },
+      () => FallbackDataService.getSkills(),
+      '/portfolio/skills'
+    );
   }
 
   static async getExperience(): Promise<Experience[]> {
-    const response = await api.get<Experience[]>('/portfolio/experience');
-    return response.data;
+    return apiCallWithFallback(
+      async () => {
+        const response = await api.get<Experience[]>('/portfolio/experience');
+        return response.data;
+      },
+      () => FallbackDataService.getExperience(),
+      '/portfolio/experience'
+    );
   }
+
   static async getEducation(): Promise<Education[]> {
-    const response = await api.get<Education[]>('/portfolio/education');
-    return response.data;
+    return apiCallWithFallback(
+      async () => {
+        const response = await api.get<Education[]>('/portfolio/education');
+        return response.data;
+      },
+      () => FallbackDataService.getEducation(),
+      '/portfolio/education'
+    );
   }
 
   static async getProjects(): Promise<Project[]> {
-    const response = await api.get<Project[]>('/portfolio/projects');
-    return response.data;
+    return apiCallWithFallback(
+      async () => {
+        const response = await api.get<Project[]>('/portfolio/projects');
+        return response.data;
+      },
+      () => FallbackDataService.getProjects(),
+      '/portfolio/projects'
+    );
   }
 
   static async getCertifications(): Promise<Certification[]> {
-    const response = await api.get<Certification[]>('/portfolio/certifications');
-    return response.data;
+    return apiCallWithFallback(
+      async () => {
+        const response = await api.get<Certification[]>('/portfolio/certifications');
+        return response.data;
+      },
+      () => FallbackDataService.getCertifications(),
+      '/portfolio/certifications'
+    );
   }
 
   static async getContact(): Promise<Contact> {
-    const response = await api.get<Contact>('/portfolio/contact');
-    return response.data;
+    return apiCallWithFallback(
+      async () => {
+        const response = await api.get<Contact>('/portfolio/contact');
+        return response.data;
+      },
+      () => FallbackDataService.getContact(),
+      '/portfolio/contact'
+    );
   }
 }
 
