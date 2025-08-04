@@ -21,11 +21,10 @@ interface NavbarProps {
 }
 
 const NavLinks = [
-  { key: "about" as keyof SectionRefs, label: "About" },
-  { key: "projects" as keyof SectionRefs, label: "Projects" },
+  { key: "skills" as keyof SectionRefs, label: "Skills" },
   { key: "experience" as keyof SectionRefs, label: "Experience" },
   { key: "education" as keyof SectionRefs, label: "Education" },
-  { key: "skills" as keyof SectionRefs, label: "Skills" },
+  { key: "projects" as keyof SectionRefs, label: "Projects" },
   { key: "certifications" as keyof SectionRefs, label: "Certifications" },
   { key: "contact" as keyof SectionRefs, label: "Contact" },
 ]

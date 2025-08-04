@@ -33,7 +33,6 @@ export default function Home() {
     <section className="flex flex-col items-center justify-center gap-4">
       <Navbar sectionRefs={sectionRefs} />
       <Hero projectsRef={ProjectsRef} contactRef={ContactRef} />
-      <About forwardRef={AboutRef} />
       <Skills forwardRef={SkillsRef} />
       <Experience forwardRef={ExperienceRef} />
       <Education forwardRef={EducationRef} />
