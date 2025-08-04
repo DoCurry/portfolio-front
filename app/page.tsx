@@ -1,5 +1,4 @@
 "use client"
-import { About } from "@/components/about";
 import { Experience } from "@/components/experience";
 import { Education } from "@/components/education";
 import { Hero } from "@/components/hero";
@@ -8,7 +7,7 @@ import { Skills } from "@/components/skills";
 import { Certifications } from "@/components/certifications";
 import { Contact } from "@/components/contact";
 import { Navbar } from "@/components/navbar";
-import { forwardRef, useRef } from "react";
+import { useRef } from "react";
 
 export default function Home() {
   const AboutRef = useRef<HTMLElement>(null);
